@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Рейтинг игроков в го РФ</title>
+
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-block center-position">
+        <div class="search-basic main-bar">
+            <div class="search">
+                <form class="search-basic-form">
+                    <img
+                        src="images/search_image.png"
+                        class="search-basic-image"
+                    >
+                    <input
+                        type="text"
+                        class="search-basic-input basic-text-style"
+                        placeholder="Поиск игрока"
+                    >
+                </form>
+            </div>
+            <div class="search-results">
+                <template id="player-card-template">
+                    <div class="player-card">
+                        <img
+                            src="images/unknown_avatar.png"
+                            class="player-photo">
+                        <div class="player-data">
+                            <div class="player-name big-text-style"></div>
+                            <div class="player-rating basic-text-style"></div>
+                            <div class="player-last-tournament-date basic-text-style"></div>
+                        </div>
+                    </div>
+                </template>
+                <div class="player-card">
+                    <img
+                        src="images/unknown_avatar.png"
+                        class="player-photo">
+                    <div class="player-data">
+                        <div class="player-name big-text-style">Пупич Пупкин</div>
+                        <div class="player-rating basic-text-style">Рейтинг: 3000</div>
+                        <div class="player-last-tournament-date basic-text-style"> Последний турнир: 12.05.2021</div>
+                    </div>
+                </div>
+                <div class="player-card">
+                    <img
+                            src="images/unknown_avatar.png"
+                            class="player-photo">
+                    <div class="player-data">
+                        <div class="player-name big-text-style">Пупич Пупкин</div>
+                        <div class="player-rating basic-text-style">Рейтинг: 3000</div>
+                        <div class="player-last-tournament-date basic-text-style"> Последний турнир: 12.05.2021</div>
+                    </div>
+                </div>
+                <div class="player-card">
+                    <img
+                            src="images/unknown_avatar.png"
+                            class="player-photo">
+                    <div class="player-data">
+                        <div class="player-name big-text-style">Пупич Пупкин</div>
+                        <div class="player-rating basic-text-style">Рейтинг: 3000</div>
+                        <div class="player-last-tournament-date basic-text-style"> Последний турнир: 12.05.2021</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" extended-search side-bar">
+            <div class="extended-search-list">
+                <div class="extended-search-li">
+                    <div class="extended-search-text basic-text-style">
+                        Город
+                    </div>
+                    <input
+                        type="text"
+                        class="extended-search-input basic-text-style"
+                        placeholder="Default city"
+                    >
+                </div>
+
+                <div class="extended-search-li">
+                    <div class="extended-search-text basic-text-style">
+                        Рейтинг
+                    </div>
+                    <div class="range-search">
+                        <input
+                                type="text"
+                                class="extended-search-input basic-text-style"
+                                placeholder="От"
+                        >
+                        <input
+                                type="text"
+                                class="extended-search-input basic-text-style"
+                                placeholder="До"
+                        >
+                    </div>
+                </div>
+
+                <div class="extended-search-li">
+                    <div class="extended-search-text basic-text-style">
+                        Последний турнир
+                    </div>
+                    <div class="data-search">
+                        <div class="inline basic-text-style">От</div>
+                        <input
+                                type="date"
+                                class="extended-search-input basic-text-style"
+                                placeholder="От"
+                        >
+                        <br>
+                        <div class="inline basic-text-style">До</div>
+                        <input
+                                type="date"
+                                class="extended-search-input basic-text-style"
+                                placeholder="До"
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
