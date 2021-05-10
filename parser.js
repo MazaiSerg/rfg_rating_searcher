@@ -13,7 +13,7 @@ function parse(getResult) {
 
             const row = table.map(nodeListToArray);
             const [, ...rows]  = row.map(value => value.map(getDataFromNode));
-            const players = rows.map(transformPlayerToObject).filter((value, index) => index < 10);
+            const players = rows.map(transformPlayerToObject).filter((value, index) => index < 100);
             const data = {
                 players
             };
@@ -38,7 +38,7 @@ function transformPlayerToObject(array) {
         danKyu: array[3],
         rating: array[4],
         dispersion: array[5],
-        lastTournamentData: array[6]
+        lastTournamentDate: array[6]
     }
 }
 
